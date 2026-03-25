@@ -81,7 +81,7 @@
 }
 
 .home__filters {
-  @apply mt-12 flex w-full flex-wrap items-center gap-5;
+  @apply mt-12 flex justify-between w-full flex-wrap items-center gap-5;
 }
 
 .home__filter-container {
