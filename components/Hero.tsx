@@ -1,13 +1,10 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import CustomButton from "./CustomButton";
 
 export default function Hero() {
-
-	const handleScroll = () => {
-
-	}
+	const handleScroll = () => {};
 
 	return (
 		<div className="hero">
@@ -16,10 +13,11 @@ export default function Hero() {
 					Find, Book, Or Rent a car - quickly and easily
 				</h1>
 				<p className="hero__subtitle">
-					Streamline your car rental experience with our effortless booking process.
+					Streamline your car rental experience with our effortless booking
+					process.
 				</p>
 
-				<CustomButton 
+				<CustomButton
 					title="Explore Cars"
 					containerStyles="bg-primary-blue text-white rounded-full !mt-10"
 					handleClick={handleScroll}
@@ -27,11 +25,9 @@ export default function Hero() {
 			</div>
 			<div className="hero__image-container">
 				<div className="hero__image">
-					<Image src="/hero.png" alt="hero" fill className="object-contain"/>
-					<div className="hero__image-overlay">
-						
-					</div>
+					<Image src="/hero.png" alt="hero" fill className="object-contain" />
 				</div>
+				<div className="hero__image-overlay"></div>
 			</div>
 		</div>
 	);
